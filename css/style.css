@@ -27,8 +27,9 @@
     21.0 CTA Area CSS
 --------------------------------------------- */
 @import url('./classy-nav.css');
-/* @import url('./owl.carousel.min.css'); */
-/* @import url('./magnific-popup.css'); */
+/* @import url('./owl.carousel.min.css'); 
+@import url('./magnific-popup.css');
+@import url('./material-design-iconic-font.min.css'); */
 
 /* :: 01.0 Reboot Area CSS */
 * {
@@ -109,6 +110,10 @@ div.welcome-text-two  h2.headline > span {
   font-size: 2rem;
   font-weight: 300;
 }
+/* == */
+/* .countdown-timer #clock .seconds > .s {
+  font-size: 3.89rem;
+} */
 .hero-btn-group p {
   color: #fff;
 }
@@ -1724,9 +1729,9 @@ h4.date {
   color: #ffffff;
 }
 .about-us-countdown-area .countdown-up-area .countdown-timer #clock div {
-  font-size: 62px;
+  font-size: 40px;
   font-weight: 600;
-  padding: 20px 5px;
+  padding: 15px 3px;
   width: 20%;
   margin: 0 15px;
   border: 2px solid rgba(255, 255, 255, 0.15);
