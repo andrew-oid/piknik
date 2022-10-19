@@ -1,3 +1,4 @@
+
 //event date
 const EVENT_DATE = new Date(2022, 9, 22).getTime()
 
@@ -24,13 +25,14 @@ const countDownToEvent = (eventDate) => {
   const pad = (n) => (n < 10 ? '0' + n : n)
 
   let length = EVENT - NOW
-
+  
   let months = pad(new Date(EVENT).getMonth() - new Date(NOW).getMonth())
   let days = pad(Math.floor(length / (1000 * 60 * 60 * 24)))
   let hours = pad(Math.floor((length % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)))
   let mins = pad(Math.floor((length % (1000 * 60 * 60)) / (1000 * 60)))
   let secs = pad(Math.floor((length % (1000 * 60)) / 1000))
-
+  
+ 
   if (length < 0) {
     return clearInterval(counter)
   }

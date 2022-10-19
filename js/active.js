@@ -30,9 +30,9 @@
     welcomeSlider.owlCarousel({
       items: 1,
       loop: true,
-      autoplay: false,
+      autoplay: true,
       smartSpeed: 1000,
-      autoplayTimeout: 10000,
+      autoplayTimeout: 4000,
       nav: true,
       navText: [
         '<i class="zmdi zmdi-chevron-left"></i>',

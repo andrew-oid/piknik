@@ -84,14 +84,15 @@ p {
 
 /* --------------------------------------- */
 .header-image {
-  background: url('../img/background.png');
+  background: url('../img/bg.png');
   background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  /* background-size: cover;
+  background-repeat: no-repeat; */
+  object-fit: cover;
 }
 
 .description > h3 {
-  font-size: 3.5rem;
+  font-size: 2rem;
   text-transform: uppercase;
   font-weight: 400;
   margin-right: 1.8rem;
@@ -102,12 +103,12 @@ p {
   font-size: 1.5rem;
   font-weight: 200;
 }
-div.welcome-text-two  h2.headline {
-  font-weight: 400;
-  font-size: 2.89rem;
+div.welcome-text-two h2.headline {
+  font-weight: 300;
+  font-size: 2.456rem;
 }
-div.welcome-text-two  h2.headline > span {
-  font-size: 2rem;
+div.welcome-text-two h2.headline > span {
+  font-size: 1.56rem;
   font-weight: 300;
 }
 /* == */
@@ -1009,10 +1010,47 @@ h4.date {
   -webkit-transition-duration: 500ms;
   -o-transition-duration: 500ms;
   transition-duration: 500ms;
-  background-color: #2f103a;
+  background-color: rgba(47, 16, 58, 0.5);
+}
+/* custom */
+@media (max-width: 768px) {
+  /* .header-area {
+    
+  }
+  .classy-nav-container {
+    background-color: red;
+    
+  }
+  .container {
+    background-color: purple;
+    width: 100%;
+    
+  }
+  nav.classy-navbar {
+    width: 100%;
+    
+    background-color: red;
+
+  }
+  nav a.nav-brand {
+    display: flex;
+    background-color: #1f2371;
+  }
+  nav a h4.date {
+    font-size: 1rem;
+    
+  } */
+
+  /* kkk */
+  .header-area.sticky {
+    background-color: #1f2371;
+  }
+  .header-area.sticky .classy-navbar {
+    height: 60px;
+  }
 }
 .header-area.sticky {
-  background-color: #2f103a;
+  background-color: rgb(76, 41, 216);
   -webkit-box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
   box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
 }
@@ -1025,9 +1063,8 @@ h4.date {
   position: relative;
   z-index: 1;
   /* ---------- */
-  height: 100vh;
 }
-.welcome-area .icon-scroll {
+/* .welcome-area .icon-scroll {
   width: 26px;
   height: 39px;
   position: absolute;
@@ -1040,8 +1077,8 @@ h4.date {
   border-radius: 25px;
   opacity: 0.75;
   cursor: pointer;
-}
-.welcome-area .icon-scroll::before {
+} */
+/* .welcome-area .icon-scroll::before {
   position: absolute;
   z-index: 999999;
   content: '';
@@ -1056,8 +1093,8 @@ h4.date {
   border-radius: 4px;
   -webkit-animation: iconScroll linear 1200ms infinite;
   animation: iconScroll linear 1200ms infinite;
-}
-
+} */
+/* 
 @-webkit-keyframes iconScroll {
   0% {
     top: 8px;
@@ -1085,12 +1122,13 @@ h4.date {
     top: 8px;
     opacity: 0;
   }
-}
+} */
 .welcome-slides {
   position: relative;
   z-index: 1;
   overflow: hidden;
 }
+
 .welcome-slides .owl-prev,
 .welcome-slides .owl-next {
   -webkit-transition-duration: 500ms;
@@ -1153,21 +1191,21 @@ h4.date {
   z-index: 2;
   width: 100%;
   height: 980px;
-  background-color: #df42b1;
+  /* background-color: #df42b1; */
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .single-welcome-slide {
-    height: 800px;
+    height: 980px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .single-welcome-slide {
-    height: 800px;
+    height: 980px;
   }
 }
 @media only screen and (max-width: 767px) {
   .single-welcome-slide {
-    height: 700px;
+    height: 980px;
   }
 }
 .single-welcome-slide .welcome-text {
@@ -1178,7 +1216,7 @@ h4.date {
   position: relative;
   z-index: 1;
   font-weight: 400;
-  font-size: 90px;
+  font-size: 50px;
   text-transform: uppercase;
   display: block;
   margin-bottom: 10px;
@@ -1196,7 +1234,7 @@ h4.date {
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .single-welcome-slide .welcome-text h2 {
-    font-size: 42px;
+    font-size: 32px;
   }
 }
 .single-welcome-slide .welcome-text h2::after {
@@ -1533,7 +1571,6 @@ h4.date {
 .about-us-countdown-area {
   position: relative;
   z-index: 1;
-  background-color: #2f103a;
 }
 .about-us-countdown-area .about-content-text h6 {
   font-size: 14px;
@@ -1546,6 +1583,7 @@ h4.date {
   padding-bottom: 5px;
   display: inline-block;
 }
+
 .about-us-countdown-area .about-content-text h3 {
   font-size: 40px;
   color: #ffffff;
@@ -1706,6 +1744,7 @@ h4.date {
   text-transform: uppercase;
   margin-bottom: 0;
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .about-us-countdown-area .countdown-up-area .countdown-content-text h4 {
     font-size: 16px;
@@ -1729,14 +1768,16 @@ h4.date {
   color: #ffffff;
 }
 .about-us-countdown-area .countdown-up-area .countdown-timer #clock div {
-  font-size: 40px;
+  font-size: 24px;
   font-weight: 600;
-  padding: 15px 3px;
-  width: 20%;
+  padding: 10px 2px;
+  width: 10%;
+  height: 10%;
   margin: 0 15px;
   border: 2px solid rgba(255, 255, 255, 0.15);
   text-align: center;
   line-height: 1;
+  background-color: #2f103a;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .about-us-countdown-area .countdown-up-area .countdown-timer #clock div {
@@ -3482,7 +3523,11 @@ h4.date {
   padding: 30px;
   border-radius: 10px;
 }
-
+/*  */
+.row.fields .form-group #name::placeholder,
+.row.fields .form-group #phone::placeholder {
+  color: rgb(151, 151, 151);
+}
 .form-group .form-control {
   -webkit-transition-duration: 300ms;
   -o-transition-duration: 300ms;
@@ -3638,4 +3683,3 @@ h4.date {
 .call-to-action-content .event-time p i {
   margin-right: 3px;
 }
-
